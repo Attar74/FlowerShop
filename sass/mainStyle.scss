@@ -1,0 +1,277 @@
+/*.wrapper{
+    height: 5vh;
+    background: #d53974;    
+}*/
+
+.header{
+    
+}
+
+.header div i{
+    font-size: 20px;
+}
+.header div .mainCart span.login a{
+    color: black;
+    font-size: 20px;
+}
+section.buttonsContainer{
+    background: #f7ecf0;
+}
+
+select#inputGroupSelect01,
+select#inputGroupSelect02{
+    color: #d53974 !important;
+}
+button#searchBtn{
+    background-color: #d53974 !important;
+    font-size: 18px !important;
+}
+
+.shopTitle hr{
+    background-color: #d53974 ;
+}
+.shopTitle p{
+    letter-spacing: .2em;
+    font-size: 20px;
+}
+
+.items div span a p{
+    line-height: 1em !important;
+    letter-spacing: .05em;
+}
+
+.itemsSingleFlower div div p.itemPrice{
+    color: #d53974;
+}
+.itemsSingleFlower div div p.itemPrice span{
+    color: black;
+    text-decoration: line-through;
+}
+.itemsSingleFlower div div.review i {
+    color: orange;    
+}
+
+.ContactOurFlowerDelivery .featuredText p a{
+    color: black;
+}
+.ContactOurFlowerDelivery div hr{
+    
+}
+
+.infoSection .allQuotes .quotes .titleQuote{
+    font-size: 22px;
+    font-weight: 800;
+}
+.footer section .footerCount0 .footerMenu .footerMenuTitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer section .footerCount0 .footerMenu .footerMenuTitle span i{
+    font-size: 15px;
+}
+
+.footer section .footerCount0 .footerMenu .footerMenuTitle span i{
+    
+}
+.footer section .footerCount0 .footerMenu hr{
+    background-color: black;
+}
+.footer .newsLetter p.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer .newsLetter hr{
+    background-color: black;
+}
+.footer .newsLetter ul li i{
+    font-size: 28px;
+}
+.footer .newsLetter .credits a{
+    color: black;
+}
+
+@media screen and (min-width: 500px){
+    div.header div.logo img{
+        width: 120px !important;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.buttonsContainer div p.leftTitle{
+        font-size: 16px;
+}
+.shopByCategory .items div span a{
+        text-decoration: none;
+}
+@media screen and (min-width: 1200px){
+    .buttonsContainer div p.leftTitle{
+        font-size: 20px !important;
+    }
+    .shopByCategory .shopTitle p{
+        font-size: 25px;
+    }
+    .shopByCategory .items div span a p{
+        font-size: 20px;
+    }
+    .footer .newsLetter ul li i{
+        font-size: 30px;
+    }
+    .featuredText p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header div i{
+        font-size: 25px;
+    }
+    .header div .mainCart span.login a{
+        font-size: 25px;
+    }
+}
+.shopByCategory .items div {
+    transition: all 1s;
+}
+.shopByCategory .items div:hover{
+    transform: scale(1.05);
+}
+.shopByCategory div.itemsSingleFlower div{
+    transition: all 1s;
+}
+.shopByCategory div.itemsSingleFlower div:hover{
+    transform: scale(1.05);
+}
+.shopByCategory .items .item button.love{
+    color: orange;
+    background: #d53974;
+    transition: all 1s;
+    cursor: pointer;
+    opacity: 0;
+}
+.shopByCategory .items div .love a{
+    color: orange;
+    cursor: pointer;
+}
+.shopByCategory .itemsSingleFlower div.parent1 span.love{
+    opacity: 0;
+    color: orange;
+    background: #d53974;
+    transition: all 1s;
+}
+.shopByCategory .itemsSingleFlower div.parent1 span.sh{
+    opacity: 1;
+}
+.shopByCategory .itemsSingleFlower div.parent1 span.love a{
+    color: orange;
+    text-decoration: none;
+}
+
+
+/* --------------- Cart ---------------- */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  z-index: 1000;
+  visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: white;
+  padding: 1.5rem;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+.showCart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+@media screen and (min-width: 576px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.closeCart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: #eee;
+  margin-bottom: 2rem;
+}
+/*---------- Cart Item -------------------- */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: grey;
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: grey;
+}
+.item-amount {
+  text-align: center;
+}
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+.fa-plus-square,
+.fa-minus-square {
+  color: pink;
+  cursor: pointer;
+}
+/*---------- End of Cart Item -------------------- */
+
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* --------------- End of Cart ---------------- */
+
+
+@media screen and (min-width: 500px){
+    .cart-item h4 {
+      font-size: 0.85rem;
+      text-transform: capitalize;
+      letter-spacing: grey;
+    }
+}
+/* --------------- -------------*/
+.fa-exclamation-circle{
+    color: red;
+    font-size: 18px;
+}

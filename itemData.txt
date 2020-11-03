@@ -1,0 +1,48 @@
+[{
+    "title" : "BIRTHDAY FLOWERS",
+	"imgSrc" : "images/01-birthday_3268aa90-fd3b-4cfa-ab59-64bb0cbb8d40_1600x.jpg",
+    "price" : 120,
+    "id" : "1"
+},
+{
+    "title" : "CAKES",
+	"imgSrc" : "images/05-cakes_1600x.jpg",
+    "price" : 150,
+    "id" : "2"
+
+},
+{
+    "title" : "BOXES BLOOMS",
+	"imgSrc" : "images/anniversary_1600x.jpg",
+    "price" : 135,
+    "id" : "3"
+},
+{
+    "title" : "ANNI FLOWERS",
+	"imgSrc" : "images/boxed_bloom_1600x.jpg",
+    "price" : 155,
+    "id" : "4"
+},{
+    "title" : "SUN FLOWERS",
+	"imgSrc" : "images/sunflower_1600x.jpg",
+    "price" : 175,
+    "id" : "5"
+},
+{
+    "title" : "ANNI FLOWERS",
+	"imgSrc" : "images/NEW-birthday-Category_button_1600x.jpg",
+    "price" : 200,
+    "id" : "6"
+},
+{
+    "title" : "BELOW $1,000",
+	"imgSrc" : "images/02-birthday_bundle_1600x.jpg",
+    "price" : 145,
+    "id" : "7"
+},
+{
+    "title" : "FUNERAL FLOWERS",
+	"imgSrc" : "images/04-condolence_1600x.jpg",
+    "price" : 180,
+    "id" : "8"
+}]

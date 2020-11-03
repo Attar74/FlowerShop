@@ -1,0 +1,64 @@
+[{
+    "numberOfReviews" : "18",
+	"imgSrc" : "images/0820-HotRomance-Thumbnail-01_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$550",
+    "oldPrice" : "$850",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "15",
+	"imgSrc" : "images/12_Red_Roses_Korean_Style_1_5000x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$850",
+    "oldPrice" : "$1,150",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "22",
+	"imgSrc" : "images/DSC_0941_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$1,150",
+    "oldPrice" : "$1,550",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>"
+},
+{
+    "numberOfReviews" : "15",
+	"imgSrc" : "images/Pink_Moment_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$775",
+    "oldPrice" : "$900",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "31",
+	"imgSrc" : "images/PH-bouquet-rename-LR-06_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$1,050",
+    "oldPrice" : "$1,350",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "28",
+	"imgSrc" : "images/PH-bouquet-rename-LR-04_5000x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$250",
+    "oldPrice" : "$550",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "22",
+	"imgSrc" : "images/PH-bouquet-rename-LR-02_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$350",
+    "oldPrice" : "$600",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='far fa-star'></i>"
+},
+{
+    "numberOfReviews" : "21",
+	"imgSrc" : "images/0620-Jade-12Roses-Thumbnail-03_1600x.jpg",
+    "title" : "La Vie EN Rose",
+    "price" : "$1,200",
+    "oldPrice" : "$1,450",
+    "review" : "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i>"
+}]

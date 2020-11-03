@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Flowr</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/ede45c7252.js" crossorigin="anonymous"></script>
+    
+    
+    <link href="stylesheets/mainStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   
+   <div class="wrapper">
+       <div class="header col-12 m-0 p-0 mt-2 sticky-top" style="background: white">
+          <div class="col-12 row col-lg-8 offset-lg-2 p-0 pl-2" style="height: 55px; background: white">  
+               <div class="call col-2 col-sm-3 col-md-2 align-self-center text-left">
+                   <i class="fas fa-bars"></i> 
+               </div>
+               <div class="logo col-4 col-sm-4 col-md-6 p-0 mt-1 mb-1 w-100">
+                   <img class="m-auto w-100" alt="Responsive image" src="images/FC_PH_Logo-mobile_410x.png" alt="Logo" style="height: 50px; width: 10px;">
+               </div>
+               
+               <div class="col-6 col-sm-5 col-md-4 align-self-center text-right">
+                  <span class="mainCart navIcon border-right border-dark pr-2 mr-2">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span class="cartItems">0</span>
+                  </span>
+                   <span class="login">
+                     <i class="fas fa-user"></i>
+                      <a href="#" class="userName">UserName</a>
+                  </span>
+               </div>
+        </div>
+       </div>
+       <!--CART-->
+       <div class="cartOverlay">
+            <div class="cart">
+                <span class="closeCart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>User cart</h2>
+                <div class="cartContent">
+                    <!--cart item-->
+                    <!--<div class="cartItem">
+                        <!--carts will go here dynamically
+                        
+                    
+                    </div>-->
+                    <!--end of cart item-->
+                </div>
+                
+                <div class="cart-footer pb-2">
+                    <h3>your total : $ <span class="cartTotal">0</span></h3>
+                    <button class="clearCart banner-btn btn btn-primary">clear cart</button>
+                </div>
+                
+            </div>
+       </div>
+       <!--END OF CART-->
+       
+       <section class="headrImg mt-2 col-12 m-0 p-0">
+           <img class="img-fluid w-100" alt="Responsive image" src="images/2.Mainbanner-mobile2.jpg" alt="Logo">
+       </section>
+       
+       <section class="buttonsContainer mt-2 col-12 m-0 mt-lg-0">
+          <div class="col-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 row m-0 m-md-auto">
+              <p class="d-none d-lg-block col-lg-3 m-0 align-self-center text-center leftTitle" style="color:#d53974; font-weight: 800">
+                  <i class="fas fa-fan"></i> Quick Flower Finder
+              </p>
+               <div class="input-group row col-12 col-md-8 col-lg-6 m-0 pt-2 pb-2">
+                  <select class="custom-select col-6 mr-1 pt-0 
+                   pb-0" id="inputGroupSelect01">
+                    <option selected>OCCASION</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                   <select class="custom-select col-6 ml-1 pt-0 pb-0" id="inputGroupSelect02">
+                    <option selected>BUDGET</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+               </div>
+               <div class="input-group col-12 col-md-4 m-0 col-lg-3 pt-2 pb-2">
+                   <button type="button" class="btn btn-lg btn-block p-0 text-light" id="searchBtn"> Search Now</button>
+               </div>
+           </div>
+       </section>
+       
+       
+      
+       <section class="shopByCategory mt-4 col-12 col-lg-10 offset-lg-1 m-lg-auto pt-5">
+           <div class="shopTitle col-12 p-0">
+               <p class="text-center text-monospace">SHOP BY CATEGORY</p>
+               <hr />
+           </div>
+           <div class="items col-12 row p-0 m-0">
+               
+           </div>
+       </section>
+       
+       <section class="headrImg mt-2 col-12 col-lg-10 offset-lg-1 m-lg-auto pt-2">
+           <img class="img-fluid w-100" alt="Responsive image" src="images/FC-sister-brand-skinny-mobile2.jpg" alt="Logo">
+       </section>
+       
+       <section class="shopByCategory mt-4 col-12 col-lg-10 offset-lg-1 m-lg-auto pt-3">
+           <div class="shopTitle col-12">
+               <p class="text-center text-monospace">FLORIST SELECTION</p>
+               <hr />
+           </div>
+           <div class="itemsSingleFlower col-12 row p-0 m-0">
+               
+           </div>
+       </section>
+       
+       <section class="RecommendedBY mt-4 mb-4 col-12 col-lg-10 offset-lg-1 m-lg-auto">
+           <div class="shopTitle col-12">
+               <p class="text-center text-monospace">RECOMMENDED BY</p>
+               <hr />
+           </div>
+           <div class="logoBar col-12 row m-0 p-0">
+                   <div class="logoBarItem col-6 col-sm-4 col-md-3 offset-md-2 offset-lg-0 col-xl-2 offset-xl-1 align-self-center">
+                       <a href="#" class="logoBarLink">
+                           <div class="imgElementWrap">
+                               <img src="images/Community_logo_1_1600x.png" class="img-fluid">
+                           </div>
+                       </a>
+                   </div>
+                   <div class="logoBarItem col-6 col-sm-4 col-md-3 col-xl-2 align-self-center">
+                       <a href="#" class="logoBarLink">
+                           <div class="imgElementWrap">
+                               <img src="images/4_1600x.jpg" class="img-fluid">
+                           </div>
+                       </a>
+                   </div>
+                   <div class="logoBarItem col-6 col-sm-4 col-md-3 col-xl-2 align-self-center">
+                       <a href="#" class="logoBarLink">
+                           <div class="imgElementWrap">
+                               <img src="images/6_400x_PHmanilabulletin_1_1600x.png" class="img-fluid">
+                           </div>
+                       </a>
+                   </div>
+                    <div class="logoBarItem col-6 col-sm-6 col-md-3 offset-md-3 col-lg-3 offset-lg-0 col-xl-2 offset-xl-0 align-self-center">
+                       <a href="#" class="logoBarLink">
+                           <div class="imgElementWrap">
+                               <img src="images/5_400x_PHphilstar_1600x.png" class="img-fluid">
+                           </div>
+                       </a>
+                   </div>
+                   
+                   <div class="logoBarItem col-6 offset-3 col-sm-6 col-md-3  offset-sm-0 col-lg-4 offset-lg-4 col-xl-2 offset-xl-0 align-self-center">
+                       <a href="#" class="logoBarLink">
+                           <div class="imgElementWrap">
+                               <img src="images/2_82e76465-82df-4bba-a7e6-5886414ad30f_1600x.jpg" class="img-fluid">
+                           </div>
+                       </a>
+                   </div>
+           </div>
+       </section>
+       <section class="ContactOurFlowerDelivery mt-4 mb-4 col-12 col-lg-10 offset-lg-1 m-lg-auto pt-3">
+           <div class="shopTitle col-12">
+               <p class="text-center text-monospace">CONTACT OUR FLOWER DELIVERY EXPERTS</p>
+               <hr />
+           </div>
+           <div class="featuredText col-12 row m-0 p-0 text-center">
+                   <p class="col-12"><em>Call Our Florist in the Philippines:</em></p>
+                   <p class="col-12"><a href="tel:+63 2 639 6736" text-dark>+63 2 639 6736</a></p>
+                   <p class="col-12"><em>(Mon-Sat, 9am-6pm)</em></p>
+           </div>
+       </section>
+       <section class="infoSection col-12 pt-3 pb-3" style="background: #e1e6ea">
+           <div class="allQuotes">
+               <div class="quotes">
+                   <p class="titleQuote">Flower Delivery Philippines</p>
+                   <p class="descriptionQuote">
+                       A bouquet of beautiful flowers is a genius gift idea. It’s perfect for any occasion plus it’s a sure way to instantly brighten up the mood of the receiver.
+                   </p>
+                   <p class="descriptionQuote">
+                       Gone are the days where you had to scout every nook and inches of your town to search for flower shops. With the advent of technology, getting a bouquet of flowers, roses delivered to your door steps is as easy as 123.
+                   </p>
+               </div>
+               <div class="quotes">
+                   <p class="titleQuote">Best Flower Shop in the Philippines with the award winning florist
+</p>
+                   <p class="descriptionQuote">
+                       With thousands of flower shops all over the country, why choose Flower Chimp?
+                   </p>
+                   <p class="descriptionQuote">
+                       Placing your flower arrangement order with us is one of the smartest decisions that you can make. Our team is composed of dedicated florists that are packed with knowledge and experience when it comes to making your flower arrangement a piece of art.
+                   </p>
+                   <p class="descriptionQuote">
+                       No matter what type of occasion do you need the flower for – anniversary gift, birthday, get well, grand opening, romance, funeral, graduation, new baby, thank you, business, Mother’s day – we make sure that we deliver nothing but the freshest and most beautiful flower arrangements. We deliver to wide range of different cities within the Philippines such as Manila, Makati, Quezon City, Cebu and Las Pinas.
+                   </p>
+               </div>
+               <div class="quotes">
+                   <p class="titleQuote">Guaranteed Fresh Flowers Everyday - Cheap Flower Delivery Philippines</p>
+                   
+                   <p class="descriptionQuote">Philippines has the perfect tropical climate to grow lovely flowers. With vast suppliers all over the country, we guarantee you that we deliver only the freshest flower arrangements.</p>
+                   
+                   <p class="descriptionQuote">
+                       Our team takes pride in the fact that they are knowledgeable not only in flower arrangements but also with the country’s area and access to the freshest flowers possible. Because of these great combinations of skills, we are able to deliver the freshest flowers – rain or shine and not only on Valentine's Day.
+                   </p>
+                   
+                   <p class="descriptionQuote">
+                       You don’t have to wait for a long time to receive your flowers. We value and respect the importance of your time so we get your flowers just when you need it. On-time delivery has been one of our greatest accomplishments. And not only that, if you place your online order before 4PM, you’ll get your flowers on the same day.
+                   </p>
+                   <p class="descriptionQuote">
+                       To make sure that we give nothing but the best service to each of our valued customers, we offer free flowers delivery nationwide.
+                   </p>
+                   <p class="descriptionQuote">
+                       Free delivery + Guaranteed On – Time Delivery + Same Day delivery = Customer satisfaction
+                   </p>
+                   <p class="descriptionQuote">
+                       Pick from our wide selections of lovely flowers such as lilies, roses, gerberas, tulips and orchids. Whether you prefer table arrangements, hand bouquets, flower stands, a mother's day gift or flower baskets, our top notched florists are high-skilled to make every order as personalized and special as possible.
+                   </p>
+               </div>
+               <div class="quotes">
+                   <p class="titleQuote">Hassle-free ordering process</p>
+                   
+                   <p class="descriptionQuote">
+                       So, if you’re wondering if you need to be ultimately techy in placing your order - the good news is that we have the easiest way of online ordering.
+                   </p>
+                   
+                   <p class="descriptionQuote">
+                       You can order anytime, anywhere – even on your pajamas at home. Simply search through our vast gallery of ethereal flower arrangements and find the one that captures your heart the most. Then add to cart the flower of your liking, enter your information and click Check Out.
+                   </p>
+                   <p class="descriptionQuote">
+                       We categorized our items based on occasion and flower types to make your experience as easy as possible. You can even add filters such as prize and flower types. If you want to get the best deal for your money, check out our promotions section for items that are discounted yet still as majestic as the rest.
+                   </p>
+                   <p class="descriptionQuote">
+                       What’s even great about our service is that you can have your flowers as personalized as possible. Send a personal touch by adding your special message which we will be placing on a card. Your receiver would be beaming ear to ear with the beauty of the flowers and your sweet and thoughtful words.
+                   </p>
+                   <p class="descriptionQuote">
+                       We also cater to business and corporate needs. Feel free to contact one of our expert customer service if you want to get the quotes.
+                   </p>
+               </div>
+           </div>
+       </section>
+       <footer class="col-12 m-0 p-0 footer" style="background: #f9eaef">
+           <section class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 pt-3">
+               <div class="footerCount0">
+                   <div class="footerMenu">
+                       <p class="footerMenuTitle text-uppercase mb-2">
+                       Information
+                       <span class="float-right"><i class="fas fa-plus"></i></span>
+                       </p>
+                       <hr class="m-0 mb-2"/>
+                   </div>
+               </div>
+               <div class="footerCount0">
+                   <div class="footerMenu">
+                       <p class="footerMenuTitle text-uppercase mb-2">
+                       Customer Service
+                       <span class="float-right"><i class="fas fa-plus"></i></span>
+                       </p>
+                       <hr class="m-0 mb-2"/>
+                   </div>
+               </div>
+               <div class="footerCount0">
+                   <div class="footerMenu">
+                       <p class="footerMenuTitle text-uppercase mb-2">
+                       Contact us
+                       <span class="float-right"><i class="fas fa-plus"></i></span>
+                       </p>
+                       <hr class="m-0 mb-2"/>
+                   </div>
+               </div>
+           </section>
+           <div class="newsLetter text-center mt-4 col-12">
+               <p class="title text-uppercase mb-0">Keep in touche with us</p>
+               <p class="detail col-10 offset-1">Subscribe to receive update, access to exclusive deals & more.</p>
+               <div class="col-12 p-0">
+                   <form id="emailInput" class="col-12">
+                      <div class="input-group p-0 pb-3 col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                          <input type="text" class="form-control col-12 m-0 border-0 rounded-0 text-center" placeholder="Enter your email address..." aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                       <button type="button" class="btn btn-success text-uppercase pr-5 pl-5 font-weight-bold rounded-0">sign up</button>                       
+                   </form>
+               </div>
+               <div class="col-12 mt-3 mb-2">
+                   <ul class="row list-unstyled m-auto" style="width: 200px">
+                       <li class="m-auto pr-2"><i class="fab fa-youtube"></i></li>
+                       <li class="m-auto pr-2"><i class="fab fa-facebook"></i></li>
+                       <li class="m-auto pr-2"><i class="fab fa-instagram"></i></li>
+                       <li class="m-auto pr-2"><i class="fas fa-envelope"></i></li>
+                   </ul>
+               </div>
+               <hr class="m-0 mb-2"/>
+               <p class="credits mt-3">© 2020 <a href="/" title="">Flower Chimp Philippines</a>.</p>
+               
+               <div class="payment_methods pb-3"> <svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="50" height="50" viewBox="0 0 38 24" xml:space="preserve" role="img" aria-labelledby="pi-alipay"><title id="pi-alipay">AliPay</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#00A0E9" d="M10.685 8.203H5.517c-.671 0-1.213.542-1.213 1.213v5.159c0 .68.542 1.222 1.213 1.222h5.158c.681 0 1.223-.542 1.223-1.212v-.08s-1.962-.817-2.959-1.302c-.671.809-1.529 1.312-2.417 1.312-1.509 0-2.022-1.321-1.312-2.188.158-.188.424-.376.829-.475.641-.157 1.667.099 2.623.415.168-.316.316-.671.424-1.046H6.128v-.295h1.529v-.543H5.823v-.296h1.844v-.77s0-.128.128-.128h.75v.897h1.825v.296H8.545v.543h1.49a5.878 5.878 0 0 1-.631 1.597c.454.168.858.316 1.164.424 1.085.365 1.332.385 1.332.385V9.416a1.215 1.215 0 0 0-1.215-1.213"></path><path fill="#00A0E9" d="M5.468 12.522c-.592.494-.237 1.401.957 1.401.69 0 1.381-.425 1.923-1.104-.77-.366-1.43-.622-2.13-.553-.198.01-.553.089-.75.256"></path><path d="M15.075 10.965l.868 1.874h-1.775l.907-1.874zm1.301 2.859h1.045l-1.953-4.241h-.286c-.049 0-.089.011-.128.04s-.069.06-.089.099l-1.982 4.103h.7l.355-.69h2.012l.326.689zm2.427 0h-.986V9.761a.187.187 0 0 1 .198-.178h.798v4.241h-.01zm.789-2.869c0-.05.02-.089.059-.129a.19.19 0 0 1 .139-.049h.799v3.156h-.986v-2.979h-.011zm2.762 2.11a.562.562 0 0 0 .157.395c.051.05.119.089.188.118.069.029.158.039.237.039s.158-.029.227-.078a.73.73 0 0 0 .188-.228c.049-.098.1-.217.129-.355a2.13 2.13 0 0 0 .049-.443c0-.207-.01-.384-.039-.542s-.07-.286-.119-.395-.107-.188-.177-.237a.395.395 0 0 0-.228-.078.586.586 0 0 0-.178.029.49.49 0 0 0-.157.089c-.049.039-.1.079-.148.128s-.088.099-.128.157v1.401zm-.987-2.15c0-.049.02-.099.049-.128.04-.04.08-.06.129-.06h.77v.247c.108-.089.236-.168.374-.228.139-.059.307-.089.493-.089.197 0 .385.04.543.119.168.079.306.188.425.315.117.139.207.296.266.474.059.177.099.364.099.572 0 .256-.04.493-.108.71a1.59 1.59 0 0 1-.829.937c-.197.09-.424.139-.67.139-.129 0-.237 0-.325-.01a.845.845 0 0 1-.267-.07v1.263h-.947v-4.191zm4.34 1.934a.69.69 0 0 1 .642-.69c.227-.02.364.029.444.079v1.114a.617.617 0 0 1-.444.188.678.678 0 0 1-.642-.691m1.342-2.081c-.454-.129-1.036-.158-1.824.049.029.079.059.217.088.296 1.253-.217 1.49-.05 1.49.493v.167c-.228-.02-.504-.049-.721-.059-.857-.01-1.164.661-1.164 1.096 0 .749.71 1.448 1.885.927v.117h.976v-2.277c-.001-.445-.385-.711-.73-.809m1.025-.1h1.006l.997 1.943.818-1.824c.02-.04.04-.069.079-.089a.243.243 0 0 1 .117-.03h.544l-1.579 3.512c-.384.956-1.301.819-1.469.819v-.533c.128 0 .552.01.738-.208a.717.717 0 0 0 .109-.197c.029-.059.049-.107.079-.156l.108-.257-1.547-2.98z"></path><path fill="#00A0E9" d="M20.578 9.83c0 .247-.216.444-.493.444-.276 0-.493-.197-.493-.444s.217-.443.493-.443c.277 0 .493.196.493.443"></path><path d="M32.514 9.88v.079h.186v.513h.108v-.513h.188V9.88h-.482zm1.085 0l-.199.364-.197-.364h-.099v.592h.099v-.395l.158.286h.079l.158-.286v.395h.098V9.88h-.097z"></path></svg> <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="50" height="50" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg> <svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="50" height="50" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z"></path><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875"></path><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858"></path><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048"></path></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z"></path><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z"></path><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z"></path></g></g></svg> <svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="50" height="50" viewBox="0 0 38 24" xml:space="preserve" role="img" aria-labelledby="pi-atmbersama"><title id="pi-atmbersama">ATM Bersama</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><g fill="#397BBE"><path d="M31.514 3.463H6.485a1.64 1.64 0 0 0-1.64 1.639v13.794a1.64 1.64 0 0 0 1.64 1.641h25.028a1.64 1.64 0 0 0 1.641-1.641V5.102a1.64 1.64 0 0 0-1.64-1.639zm-6.702 2.135s.725.175.818.953l.015 2.577 3.248-3.073s.766-.872 1.557-.335c0 0 .523.268.576.926v5.303s-.046.823-.919 1.022l-.048-6.298c-.081-.268-.348-.054-.348-.054l-4.954 4.645-.039-4.604c-.095-.309-.337-.107-.337-.107l-5.502 4.94V6.887h2.77l-.541.51s-.389.429-.887.416h-.362v1.584l3.732-3.543s.551-.47 1.221-.256zm.511 7.035s-.579.643-1.438.188c0 0-.512-.242-.536-1.02l-.041-2.523-3.558 3.45s-.913.766-1.65.242c0 0-.484-.242-.551-.914V7.813l-1.597-.014s-.825-.042-.968-.899h3.465l.014 5.128c.093.363.417.081.417.081l5.438-4.94-.016 4.577c.055.336.349.188.349.188l4.995-4.67.021 5.722c-.281-.061-.818-.268-.936-1.011V9.424l-3.408 3.209zM15.894 5.54h5.853l.179.018s.457.054.281.604l-.122.295h-7.109c.043-.286.22-.78.918-.917zm-8.751 5.799l.305-.43 5.439-5.136s.61-.448 1.2-.108c0 0 .591.286.626.877v5.351s.016.874-.917 1.079l-.033-6.161c-.071-.376-.394-.109-.394-.109l-6.163 5.781c-.141-.192-.315-.58-.063-1.144zm1.878 1.306s-.693.646-1.492.127l5.824-5.424v5.618c-.303-.08-.808-.311-.931-1V9.407l-3.401 3.238zm1.348 3.632c.654.326.78 1.082.268 1.607-.216.221-.486.342-.783.412a3.352 3.352 0 0 1-.786.086c-.636-.002-1.27-.004-1.906 0-.103.002-.138-.012-.105-.127.299-1.094.591-2.191.889-3.285.139-.512.468-.807.986-.844.468-.033.939-.043 1.405.039.292.053.563.16.747.406a.98.98 0 0 1-.373 1.467c-.149.072-.31.109-.501.158l.159.081zm2.001.729c-.102.002-.116-.027-.092-.123.113-.432.11-.434.554-.434.219 0 .438-.002.657.002.082.002.107-.029.116-.107.046-.396-.21-.658-.631-.635-.479.023-.869.354-1.004.848a1.331 1.331 0 0 0-.025.689c.089.357.426.564.854.533.196-.014.38-.062.546-.166.094-.059.159-.055.222.043.062.1.135.191.208.281.049.062.046.104-.025.148a1.982 1.982 0 0 1-1.76.217c-.489-.164-.739-.539-.816-1.039-.186-1.191.889-2.309 2.088-2.178.834.094 1.22.742 1.09 1.504-.009.051-.021.096-.033.145-.05.205-.126.27-.337.271-.268.004-.537.002-.805.002v-.002c-.272-.001-.539-.005-.807.001zm3.057-.438c-.18.543-.325 1.094-.453 1.652-.03.131-.084.172-.214.162-.164-.012-.33-.004-.496-.002-.069 0-.107-.002-.082-.096.273-1 .543-2.006.813-3.01.032-.121.107-.176.233-.174.143.002.286.002.429 0 .062-.002.079.02.065.08-.021.076-.038.152-.065.262.326-.266.686-.312 1.056-.316.155-.002.192.047.156.197-.034.143-.071.287-.107.43-.026.104-.083.154-.197.16a2.092 2.092 0 0 0-.652.137.797.797 0 0 0-.486.518zm3.698-.691c-.069.102-.127.113-.232.035a1.245 1.245 0 0 0-.643-.242.748.748 0 0 0-.267.02c-.131.033-.222.111-.248.25-.026.141.042.23.15.305.131.086.277.143.417.213.108.053.218.102.322.164.589.35.611 1.121.045 1.518-.393.277-.829.311-1.283.229a2.072 2.072 0 0 1-.802-.32c-.175-.123-.186-.219-.041-.365.087-.09.164-.223.268-.254.106-.031.19.121.293.178.239.135.493.205.767.205.1 0 .194-.02.281-.072.187-.117.206-.346.034-.48a1.26 1.26 0 0 0-.23-.135c-.192-.094-.393-.172-.578-.281-.483-.279-.526-.732-.305-1.166.238-.467.676-.588 1.143-.607.391.012.743.098 1.057.309.136.09.14.16.036.283-.063.068-.131.135-.184.213zm2.804 2.506a8.838 8.838 0 0 0-.564 0c-.084.002-.126-.012-.085-.109.025-.068.037-.145.062-.24a1.55 1.55 0 0 1-1.002.344.98.98 0 0 1-.88-.479c-.199-.318-.094-.756.247-1.043.473-.402 1.028-.553 1.643-.521.091.004.112.039.069.115-.009.018-.018.033-.022.051-.056.203-.174.305-.397.332a1.22 1.22 0 0 0-.659.312c-.122.107-.195.236-.148.402.045.166.164.258.33.297a.911.911 0 0 0 1.01-.529c.125-.314.203-.648.254-.982.037-.246-.091-.416-.35-.475-.345-.08-.684-.031-1.02.064-.163.047-.162.051-.198-.119a1.887 1.887 0 0 1-.024-.133c-.034-.189.038-.352.225-.402.55-.146 1.11-.205 1.655.02.365.15.543.477.512.871-.03.396-.167.766-.261 1.148-.08.324-.176.645-.259.971-.02.081-.055.109-.138.105zm5.34-.006h-.819l.469-1.758c.202-.725-.321-.779-.321-.779a.763.763 0 0 0-.819.482l-.59 2.068h-.819l.51-1.893c.122-.645-.39-.658-.39-.658-.55-.055-.764.43-.764.43l-.605 2.094h-.819l.779-2.924c.08-.283.309-.283.309-.283l.592.014-.094.35c.442-.443.818-.402.818-.402.817-.121 1.033.631 1.033.631.617-.807 1.327-.631 1.327-.631 1.102.131.753 1.248.753 1.248l-.55 2.011zm3.772-2.092c-.046.338-.157.66-.242.988-.086.336-.182.67-.268 1.01-.019.074-.049.1-.127.098a14.506 14.506 0 0 0-.59 0c-.073.002-.097-.018-.073-.09.022-.072.039-.145.068-.258a1.553 1.553 0 0 1-1.008.342c-.386 0-.696-.164-.889-.504-.183-.322-.066-.746.26-1.02.473-.395 1.023-.549 1.631-.52.097.004.124.037.078.121-.006.01-.008.018-.011.025-.068.199-.169.332-.414.355a1.135 1.135 0 0 0-.665.322c-.109.104-.183.223-.141.383a.417.417 0 0 0 .316.299c.449.121.947-.182 1.088-.664.067-.242.126-.486.182-.729.077-.346-.054-.545-.405-.605a2.003 2.003 0 0 0-.979.092c-.109.037-.141.016-.161-.098-.081-.443-.006-.551.446-.631.393-.068.781-.094 1.17 0 .561.147.812.51.734 1.084z"></path><path d="M10.139 14.898a.945.945 0 0 0-.329-.061c-.277-.004-.554-.004-.831-.004-.13 0-.206.068-.239.191-.227.846-.454 1.689-.683 2.535-.022.08.001.1.08.1.21-.002.421 0 .63 0v-.01c.224 0 .447.002.669 0 .049 0 .098-.016.145-.027.33-.074.542-.318.525-.602-.018-.307-.236-.502-.599-.531-.124-.01-.25-.002-.375-.01-.118-.006-.305.055-.339-.025-.047-.111.039-.264.091-.393.036-.088.1-.137.208-.135.223.006.447.012.669-.018.219-.029.419-.096.557-.281.205-.27.12-.611-.179-.729z"></path></g></svg> <svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="50" height="50" viewBox="0 0 38 24" xml:space="preserve" role="img" aria-labelledby="pi-bancnet"><title id="pi-bancnet">Banc Net</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M7.193 8.965h2.962c.413 0 1.008.286.57 1.085a2.089 2.089 0 0 1-1.44 1.073l-.007.014c.556.06.76.465.421 1.085-.532.972-1.424 1.187-2.46 1.187H4.76l2.433-4.444zm-.528 3.57h.596c.425 0 .842-.006 1.104-.487.253-.458-.145-.458-.522-.458h-.66l-.518.945zm.996-1.818h.384c.397 0 .869.033 1.172-.52.197-.36-.251-.36-.571-.36h-.503l-.482.88zm4.682 1.205c-.354.141-1.15.22-1.355.593-.113.207.053.266.259.266.128 0 .259-.018.402-.059l-.596.727c-.192.014-.399.039-.583.039-.853 0-1.152-.387-.801-1.027.715-1.305 2.826-.892 3.149-1.485.12-.219-.109-.266-.301-.266-.497 0-1.099.152-1.642.313l.545-.813c.62-.12 1.229-.206 1.825-.206 1.25 0 1.21.526 1.013.886l-1.379 2.519h-1.35l.814-1.487zm3.591-1.358l.007.014c.646-.427 1.181-.574 1.713-.574.767 0 1.213.3.746 1.153l-1.232 2.252h-1.35l.971-1.773c.16-.292.182-.592-.245-.592-.362 0-.93.233-1.463 1.206l-.634 1.16h-1.349l1.82-3.325h1.278l-.262.479zm4.337 2.805c-.385.08-.754.117-1.108.117-1.158 0-1.59-.584-.934-1.784.468-.853 1.364-1.699 2.671-1.699.512 0 .875.04 1.188.125l-.416 1.007c-.26-.093-.525-.18-.832-.18-.561 0-1.016.3-1.283.787-.291.533-.12.791.426.791.299 0 .645-.085.992-.179l-.704 1.015zm2.795-4.404h1.762l.236 2.891h.014l1.584-2.891h1.305l-2.432 4.445h-1.74l-.287-2.839h-.014l-1.553 2.839h-1.309l2.434-4.445zm6.145 4.396c-.436.08-.871.127-1.426.127-1.492 0-1.658-.734-1.105-1.744.549-1 1.578-1.739 2.893-1.739 1.172 0 1.572.566 1.047 1.526l-.227.413h-2.471c-.283.513.117.707.586.707.418 0 .898-.115 1.35-.219l-.647.929zm.207-2.025c.215-.392.115-.586-.227-.586-.383 0-.742.293-.938.586h1.165zm4.236-.378h-.803l-.617 1.126c-.156.286-.162.452.15.452.17 0 .346-.031.555-.092l-.664.94a4.662 4.662 0 0 1-.975.105c-.682 0-1.092-.174-.689-.906l.891-1.625h-.525l.479-.874h.525l.328-.599 1.496-.267-.477.866h.803l-.477.874zm-1.603 2.794H4.572l-.222.404h27.476zM3.869 15.035h27.479l.22-.404H4.091z" fill="red"></path></svg> <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 38 24" role="img" aria-labelledby="pi-enets"><title id="pi-enets">eNETS</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#E41132" d="M20.691 8.541l.172.01c.162.202.391.124.592.124 3.881.004 7.764.004 11.645 0 .201 0 .43.08.592-.124l.229.014c.033.063.07.069.113.007 1.213.121 1.881.85 1.867 2.022-.002.327-.17.474-.461.449-.346-.029-.852.201-.938-.375-.059-.384-.246-.576-.572-.698-.436-.292-.926-.129-1.385-.125-.732.007-1.479-.139-2.203.091l-.463.016c-.072-.099-.092-.039-.107.035-.482.478-.402.933.227 1.095.305.079.582.19.953.165 1.125-.074 2.27-.138 3.391.092.789.162 1.387.598 1.551 1.434.172.869.088 1.689-.643 2.318a1.482 1.482 0 0 1-.998.383c-1.328-.002-2.656.031-3.98-.008-1.391-.043-2.211-.891-2.146-2.098.014-.277.016-.457.369-.334a.616.616 0 0 0 .398-.002c.426-.172.604-.012.633.414.025.355.271.502.584.523 1.285.084 2.574.064 3.861.012.326-.014.529-.184.553-.541.023-.354-.096-.599-.447-.705-.129-.038-.256-.08-.383-.12-.26-.248-.584-.131-.871-.119-.789.034-1.588-.143-2.367.1-1.773-.014-2.393-.691-2.428-2.646-.718-.26-1.461-.065-2.189-.11-.23-.014-.5-.112-.695.124-.004 1.593-.008 3.186-.016 4.779-.002.26.072.617-.264.68-.359.068-.787.25-1.094-.166.096-.086.1-.199.1-.316 0-1.488 0-2.979-.002-4.468 0-.148.031-.313-.143-.402l-.088-.117c-.145-.183-.348-.116-.529-.118-.779-.008-1.557-.006-2.334-.007a.278.278 0 0 0-.027-.109c.033-.397.098-.793-.057-1.179zm4.305 1.777l-.057.01v4.691h.057v-4.701z"></path><path fill="#E40E30" d="M15.489 12.727l.001 1.281c-.135.475.166 1.02-.232 1.453-.872.154-1.49-.107-2.02-.889-.901-1.328-1.933-2.569-2.921-3.837-.101-.129-.132-.396-.409-.309-.033-.003-.078-.019-.096-.004-.022.02-.031.064-.031.099-.001 1.375-.003 2.753.003 4.128.001.203-.069.424.088.605-.311.412-.745.238-1.103.166-.373-.076-.256-.465-.257-.738-.006-1.824.013-3.651-.014-5.476-.007-.505.195-.656.657-.706.851-.092 1.463.117 1.973.898.774 1.188 1.693 2.281 2.556 3.411.103.135.235.246.354.369.199-.136.129-.344.13-.523.006-1.106.006-2.211 0-3.316-.001-.184.061-.385-.099-.542.34-.433.803-.265 1.233-.25.302.393.079.864.193 1.285l-.005.131-.001 1.29v1.474z"></path><path fill="#0B4AB6" d="M4.759 10.265c.525-.024 1.046.156 1.501.505.26.199.55.442.281.813-.294.404-.57.17-.872-.051-.642-.469-1.444-.452-2.036.004a1.692 1.692 0 0 0-.543 1.968c.258.662.968 1.104 1.696 1.049.378-.027.7-.184.983-.432.25-.217.514-.277.759-.006.278.307.051.521-.164.729-.76.738-2.061.845-3.054.256a2.573 2.573 0 0 1-1.179-2.93c.327-1.165 1.346-1.92 2.628-1.905zM15.258 15.461c.398-.434.097-.979.232-1.453 1.575 0 3.15.029 4.723-.014.672-.018.557.385.572.783.016.418.023.734-.576.719-1.649-.043-3.3-.027-4.951-.035zM15.489 12.727v-1.475c1.497 0 2.994.029 4.49-.01.609-.015.631.295.631.75-.002.452-.02.765-.631.75-1.496-.041-2.993-.015-4.49-.015z"></path><path fill="#0046B7" d="M15.495 9.831c-.114-.421.109-.892-.193-1.285 1.797-.054 3.593-.045 5.389-.005.154.386.09.783.057 1.178-.207.129-.438.115-.666.115l-4.587-.003z"></path><path fill="#0B4AB6" d="M4.989 13.313l-1.264.001c-.281 0-.417-.145-.435-.42-.018-.277.113-.475.376-.481a52.68 52.68 0 0 1 2.754.002c.256.008.388.235.358.502-.026.237-.163.389-.413.392-.459.007-.918.002-1.377.002l.001.002z"></path><path fill="#E0001D" d="M33.691 8.551c-.162.203-.391.124-.592.124-3.881.004-7.764.004-11.645 0-.201 0-.43.079-.592-.124.9-.011 1.801-.029 2.701-.03 3.166-.003 6.332-.002 9.498 0 .212 0 .421.019.63.03z"></path><path fill="#0B4AB6" d="M15.495 9.831l4.587.003c.229 0 .459.014.666-.115a.262.262 0 0 1 .027.109c-.025.038-.053.076-.078.113-1.735.007-3.471.015-5.207.021l.005-.131z"></path><path fill="#E0001D" d="M23.727 10.069c.174.089.143.254.143.402.002 1.489.002 2.979.002 4.468 0 .117-.004.23-.1.316-.15-.869-.045-1.744-.062-2.617-.017-.855.009-1.713.017-2.569zM9.872 15.254c-.158-.182-.087-.402-.088-.605-.006-1.375-.004-2.752-.003-4.128 0-.034.009-.079.031-.099.018-.015.063.001.096.004.011 1.609.082 3.22-.036 4.828zM14.069 8.796c.16.157.098.359.099.542.005 1.105.005 2.21 0 3.316 0 .18.069.388-.13.523l.031-4.381zM30.342 9.937c.725-.23 1.471-.084 2.203-.091.459-.004.949-.167 1.385.125l-3.588-.034zM30.455 12.598c.779-.243 1.578-.066 2.367-.1.287-.013.611-.129.871.119l-3.238-.019zM20.697 9.94c.025-.038.053-.076.078-.113.777.001 1.555 0 2.334.007.182.001.385-.065.529.118l-2.941-.012zM25.145 9.963c.195-.235.465-.137.695-.124.729.045 1.471-.149 2.188.111l-2.883.013zM29.771 9.988c.016-.074.035-.133.107-.035a.135.135 0 0 1-.107.035zM34.033 8.572c-.043.062-.08.056-.113-.007l.113.007zM24.996 10.318v4.701h-.057v-4.691a.964.964 0 0 0 .057-.01z"></path></g></svg> <svg class="payment-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="50" height="50" viewBox="0 0 38 24" xml:space="preserve" role="img" aria-labelledby="pi-fpx"><title id="pi-fpx">FPX</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill="#242B57" d="M15.095 8.321h4.733v1.434H16.65v1.436h2.942v1.436H16.65v2.752h-1.555zm5.85 0h2.623c.363 0 .709.033 1.037.099.324.066.607.18.852.343.242.163.434.383.578.659.143.275.215.623.215 1.041 0 .413-.068.758-.201 1.039a1.695 1.695 0 0 1-.547.668 2.21 2.21 0 0 1-.83.352c-.316.07-.662.105-1.035.105h-1.133v2.752h-1.559V8.321zm1.559 2.989h1.033c.139 0 .275-.013.402-.04.131-.025.248-.072.35-.132a.728.728 0 0 0 .25-.261.83.83 0 0 0 .094-.415.692.692 0 0 0-.125-.432c-.08-.111-.188-.195-.316-.255s-.275-.098-.436-.114-.314-.024-.459-.024h-.793v1.673zm6.476.38l-2.334-3.369H28.6l1.505 2.472 1.446-2.472h1.885l-2.282 3.339 2.551 3.719H31.75l-1.723-2.842-1.675 2.842h-1.844z"></path><path fill="#0286C8" d="M8.285 14.053l-.984-1.332c-.149-.199-.399-.458-.399-.719 0-.266.25-.523.399-.723l.984-1.333a.784.784 0 0 1 .134-.146V8.265c0-1.232-.514-1.544-1.145-.689L5.15 10.448c-.312.428-.854.99-.854 1.554 0 .562.543 1.123.854 1.553l2.125 2.871c.63.855 1.145.543 1.145-.689v-1.535a.882.882 0 0 1-.135-.149"></path><path fill="#242B57" d="M12.454 10.448l-2.122-2.874c-.629-.855-1.146-.542-1.146.69V9.8a.784.784 0 0 1 .135.146l.985 1.332c.147.201.399.459.399.725 0 .259-.252.521-.399.72l-.985 1.334a.715.715 0 0 1-.135.145v1.535c0 1.234.516 1.543 1.146.691l2.122-2.873c.316-.428.857-.99.857-1.553 0-.564-.541-1.127-.857-1.554"></path></svg> <svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="50" height="50" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg> <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 38 24" role="img" aria-labelledby="pi-seveneleven"><title id="pi-seveneleven">7-Eleven</title><path d="M35,0H3A3,3,0,0,0,0,3V21a3,3,0,0,0,3,3H35a3,3,0,0,0,3-3V3A3,3,0,0,0,35,0Z" opacity=".07"></path><path fill="#fff" d="M35,.9a2,2,0,0,1,2,2v18a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V2.9a2,2,0,0,1,2-2H35"></path><circle fill="#008357" cx="19" cy="11.9" r="9.85"></circle><path fill="#fff" d="M24.6,18.93a.7.7,0,0,1-.54.53H21.21V20H17.05v-.54H13.94a.69.69,0,0,1-.3-.17.81.81,0,0,1-.22-.43L12.12,6.08a.67.67,0,0,1,.45-.57l12.74,0a.74.74,0,0,1,.56.44.92.92,0,0,1,0,.33Z"></path><path fill="#ed1c2e" d="M23.92,10.1a4.27,4.27,0,0,0-2.47,2.79H18a3.64,3.64,0,0,1,.14-.47,7.78,7.78,0,0,1,2.07-3.27,10.36,10.36,0,0,1,2.87-2,4.05,4.05,0,0,1,.55-.2c.09,0,.17-.06.28-.07V10.1"></path><path d="M22.84,7a8.48,8.48,0,0,0-1.92,1.2,11.33,11.33,0,0,0-1.79,1.74H14.41v-3Z" fill="#f58220"></path><path fill="#008357" d="M20.6,13.16c-.11.81-.23,1.61-.38,2.42h-1.1c-.12-.81-.25-1.61-.36-2.41h.74c.1.6.17,1.21.28,1.79.11-.59.18-1.2.28-1.8h.51m-5,.49H15v.42h.57v.52H15v.48h.57v.5H14.23V13.15h1.33v.51m3,0H18v.42h.57v.52H18v.48h.57v.5H17.28V13.15h1.33v.51m3.51,0h-.58v.42h.57v.52h-.57v.48h.57v.5H20.78V13.15h1.34v.51m-6.3-.51h.74v1.93h.54v.5H15.82V13.15m7.27.27a.68.68,0,0,1,.61-.34c.43,0,.51.31.51.93v1.56h-.74V14.06c0-.22,0-.36-.17-.36s-.21.17-.21.45v1.42h-.74V13.13h.74v.29m-1.17,3c.08,0,.15,0,.15-.1s-.07-.09-.13-.09h-.13v.19h.11m-.11.35h-.09V16.1H22c.15,0,.22.06.22.17a.15.15,0,0,1-.15.17h0l.18.28h-.11l-.16-.27h-.11v.27Zm.11.14a.46.46,0,0,0,.46-.45.45.45,0,0,0-.9,0h0a.44.44,0,0,0,.42.45h0Zm-.54-.49a.55.55,0,0,1,1.09,0,.56.56,0,0,1-.54.56h0a.54.54,0,0,1-.54-.53Z"></path><path fill="#ed1c2e" d="M17.29,19.78V18.62c0-.92.11-1.87.24-2.78h3.53c-.13,1.31-.12,2.62-.12,3.94H17.29Z"></path></svg> <svg class="payment-icon" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="50" height="50" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg></div>
+           </div>
+       </footer>
+   </div>
+    
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="jsFiles/pureJs.js"></script>
+    <!--<script src="jsFiles/JQuery-3.3.1.js"></script>
+    <script src="jsFiles/JQuery-3.3.1.min.js"></script>
+    <script src="jsFiles/bootstrap.js"></script>
+    <script src="jsFiles/bootstrap.min.js"></script>
+    <script src="jsFiles/popper.js"></script>-->
+</body>
+
+</html>

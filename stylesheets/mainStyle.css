@@ -1,0 +1,390 @@
+/*.wrapper{
+    height: 5vh;
+    background: #d53974;    
+}*/
+/* line 10, ../sass/mainStyle.scss */
+.header div i {
+  font-size: 20px;
+}
+
+/* line 13, ../sass/mainStyle.scss */
+.header div .mainCart span.login a {
+  color: black;
+  font-size: 20px;
+}
+
+/* line 17, ../sass/mainStyle.scss */
+section.buttonsContainer {
+  background: #f7ecf0;
+}
+
+/* line 21, ../sass/mainStyle.scss */
+select#inputGroupSelect01,
+select#inputGroupSelect02 {
+  color: #d53974 !important;
+}
+
+/* line 25, ../sass/mainStyle.scss */
+button#searchBtn {
+  background-color: #d53974 !important;
+  font-size: 18px !important;
+}
+
+/* line 30, ../sass/mainStyle.scss */
+.shopTitle hr {
+  background-color: #d53974;
+}
+
+/* line 33, ../sass/mainStyle.scss */
+.shopTitle p {
+  letter-spacing: .2em;
+  font-size: 20px;
+}
+
+/* line 38, ../sass/mainStyle.scss */
+.items div span a p {
+  line-height: 1em !important;
+  letter-spacing: .05em;
+}
+
+/* line 43, ../sass/mainStyle.scss */
+.itemsSingleFlower div div p.itemPrice {
+  color: #d53974;
+}
+
+/* line 46, ../sass/mainStyle.scss */
+.itemsSingleFlower div div p.itemPrice span {
+  color: black;
+  text-decoration: line-through;
+}
+
+/* line 50, ../sass/mainStyle.scss */
+.itemsSingleFlower div div.review i {
+  color: orange;
+}
+
+/* line 54, ../sass/mainStyle.scss */
+.ContactOurFlowerDelivery .featuredText p a {
+  color: black;
+}
+
+/* line 61, ../sass/mainStyle.scss */
+.infoSection .allQuotes .quotes .titleQuote {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* line 65, ../sass/mainStyle.scss */
+.footer section .footerCount0 .footerMenu .footerMenuTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* line 70, ../sass/mainStyle.scss */
+.footer section .footerCount0 .footerMenu .footerMenuTitle span i {
+  font-size: 15px;
+}
+
+/* line 77, ../sass/mainStyle.scss */
+.footer section .footerCount0 .footerMenu hr {
+  background-color: black;
+}
+
+/* line 80, ../sass/mainStyle.scss */
+.footer .newsLetter p.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* line 84, ../sass/mainStyle.scss */
+.footer .newsLetter hr {
+  background-color: black;
+}
+
+/* line 87, ../sass/mainStyle.scss */
+.footer .newsLetter ul li i {
+  font-size: 28px;
+}
+
+/* line 90, ../sass/mainStyle.scss */
+.footer .newsLetter .credits a {
+  color: black;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 95, ../sass/mainStyle.scss */
+  div.header div.logo img {
+    width: 120px !important;
+    margin: 0 auto;
+    display: block;
+  }
+}
+/* line 101, ../sass/mainStyle.scss */
+.buttonsContainer div p.leftTitle {
+  font-size: 16px;
+}
+
+/* line 104, ../sass/mainStyle.scss */
+.shopByCategory .items div span a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 108, ../sass/mainStyle.scss */
+  .buttonsContainer div p.leftTitle {
+    font-size: 20px !important;
+  }
+
+  /* line 111, ../sass/mainStyle.scss */
+  .shopByCategory .shopTitle p {
+    font-size: 25px;
+  }
+
+  /* line 114, ../sass/mainStyle.scss */
+  .shopByCategory .items div span a p {
+    font-size: 20px;
+  }
+
+  /* line 117, ../sass/mainStyle.scss */
+  .footer .newsLetter ul li i {
+    font-size: 30px;
+  }
+
+  /* line 120, ../sass/mainStyle.scss */
+  .featuredText p {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 126, ../sass/mainStyle.scss */
+  .header div i {
+    font-size: 25px;
+  }
+
+  /* line 129, ../sass/mainStyle.scss */
+  .header div .mainCart span.login a {
+    font-size: 25px;
+  }
+}
+/* line 133, ../sass/mainStyle.scss */
+.shopByCategory .items div {
+  transition: all 1s;
+}
+
+/* line 136, ../sass/mainStyle.scss */
+.shopByCategory .items div:hover {
+  transform: scale(1.05);
+}
+
+/* line 139, ../sass/mainStyle.scss */
+.shopByCategory div.itemsSingleFlower div {
+  transition: all 1s;
+}
+
+/* line 142, ../sass/mainStyle.scss */
+.shopByCategory div.itemsSingleFlower div:hover {
+  transform: scale(1.05);
+}
+
+/* line 145, ../sass/mainStyle.scss */
+.shopByCategory .items .item button.love {
+  color: orange;
+  background: #d53974;
+  transition: all 1s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* line 152, ../sass/mainStyle.scss */
+.shopByCategory .items div .love a {
+  color: orange;
+  cursor: pointer;
+}
+
+/* line 156, ../sass/mainStyle.scss */
+.shopByCategory .itemsSingleFlower div.parent1 span.love {
+  opacity: 0;
+  color: orange;
+  background: #d53974;
+  transition: all 1s;
+}
+
+/* line 162, ../sass/mainStyle.scss */
+.shopByCategory .itemsSingleFlower div.parent1 span.sh {
+  opacity: 1;
+}
+
+/* line 165, ../sass/mainStyle.scss */
+.shopByCategory .itemsSingleFlower div.parent1 span.love a {
+  color: orange;
+  text-decoration: none;
+}
+
+/* --------------- Cart ---------------- */
+/* line 172, ../sass/mainStyle.scss */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+/* line 182, ../sass/mainStyle.scss */
+.cart {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: white;
+  padding: 1.5rem;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+
+/* line 195, ../sass/mainStyle.scss */
+.showCart {
+  transform: translateX(0);
+}
+
+/* line 198, ../sass/mainStyle.scss */
+.transparentBcg {
+  visibility: visible;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 202, ../sass/mainStyle.scss */
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+/* line 208, ../sass/mainStyle.scss */
+.closeCart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+/* line 212, ../sass/mainStyle.scss */
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: #eee;
+  margin-bottom: 2rem;
+}
+
+/*---------- Cart Item -------------------- */
+/* line 219, ../sass/mainStyle.scss */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* line 226, ../sass/mainStyle.scss */
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+
+/* line 230, ../sass/mainStyle.scss */
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: grey;
+}
+
+/* line 235, ../sass/mainStyle.scss */
+.cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: grey;
+}
+
+/* line 239, ../sass/mainStyle.scss */
+.item-amount {
+  text-align: center;
+}
+
+/* line 242, ../sass/mainStyle.scss */
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+
+/* line 246, ../sass/mainStyle.scss */
+.fa-plus-square,
+.fa-minus-square {
+  color: pink;
+  cursor: pointer;
+}
+
+/*---------- End of Cart Item -------------------- */
+/* line 253, ../sass/mainStyle.scss */
+.cart-footer {
+  margin-top: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+/* line 258, ../sass/mainStyle.scss */
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* --------------- End of Cart ---------------- */
+@media screen and (min-width: 500px) {
+  /* line 267, ../sass/mainStyle.scss */
+  .cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    letter-spacing: grey;
+  }
+}
+/* --------------- -------------*/
+.fa-exclamation-circle{
+    color: red;
+    font-size: 18px;
+}
+/*------------------------------*/
+.currentItem .info p.titleItem,
+.currentItem .info p.priceItem{
+      color: #d53974;
+    font-weight: bold;
+}
+.currentItem .info p.titleItem{
+    letter-spacing: .1em;
+    font-size: 25px;
+}
+.currentItem .info p.priceItem{
+    font-size: 25px;
+}
+@media screen and (max-width: 500px){
+   .currentItem .info p.titleItem{
+    font-size: 18px;
+}
+.currentItem .info p.priceItem{
+    font-size: 18px;
+} 
+}
+
+
+button.nextBtn{
+    font-size: 20px;
+    color: orange;
+    background: #d53974;
+    transition: all .5s;
+}
+button.nextBtn:hover{
+    font-size: 22px;
+    color: orange;
+    background: #d53974;
+}
